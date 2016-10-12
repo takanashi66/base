@@ -1,5 +1,5 @@
 //reset.css
-@import 'base/reset';
+@import 'base/ress';
 
 ///*------------------------------------*//
 //    Colors
@@ -38,7 +38,7 @@ $img_path:'../common/images/';
 
 
 //メディアクエリ挿入
-@mixin media_query($width){
+@mixin media_query($width:640){
 	@media screen and (max-width: $width+px){
 		@content;
 	}
