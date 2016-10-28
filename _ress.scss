@@ -37,6 +37,13 @@ html {
    # General elements
    # ================================================================= */
 
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+
+
+
+
 /* Add the correct display in iOS 4-7.*/
 audio:not([controls]) {
   display: none;
@@ -45,6 +52,19 @@ audio:not([controls]) {
 
 hr {
   overflow: visible; /* Show the overflow in Edge and IE */
+}
+
+li{
+	list-style: none;
+}
+
+table{
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+table th{
+	font-weight: normal;
 }
 
 /*
@@ -89,6 +109,7 @@ abbr[title] {
 a {
   background-color: transparent; /* Remove the gray background on active links in IE 10 */
   -webkit-text-decoration-skip: objects; /* Remove gaps in links underline in iOS 8+ and Safari 8+ */
+  text-decoration: none;
 }
 
 a:active,
