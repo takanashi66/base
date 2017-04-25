@@ -3,10 +3,10 @@ html{
 }
 
 body{
-	color: $default-font-color;
-	font-family: $default-font-family;
-	line-height: $default-line-height;
-	background-color: $default-bg-color;
+	color: $font-color;
+	font-family: $font-family;
+	line-height: $line-height;
+	background-color: $bg-color;
 }
 
 ::-moz-selection, ::selection{
@@ -14,16 +14,17 @@ body{
 	text-shadow: none;
 }
 
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-weight: normal;
+  }
+}
+
 a{
 	&:link,
 	&:visited,
 	&:active {
-		color: $default-link-color;
-		text-decoration: underline;
-	}
-	
-	&:hover{
-		text-decoration: none;
+		color: $accent-color;
 	}
 }
 
@@ -31,8 +32,11 @@ button,
 input,
 select,
 textarea {
-    color: $default-font-color;
-    outline: none;
+    color: $font-color;
+    
+    &:focus{
+	    outline: none;
+    }
 }
 
 textarea {
