@@ -21,11 +21,12 @@ body{
 }
 
 a{
-	&:link,
-	&:visited,
-	&:active {
-		color: $accent-color;
-	}
+  color: $accent-color;
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
 }
 
 button,
