@@ -1,17 +1,9 @@
 html{
-	font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 body{
-	color: $font-color;
-	font-family: $font-family;
-	line-height: $line-height;
-	background-color: $bg-color;
-}
-
-::-moz-selection, ::selection{
-	background: #b3d4fc;
-	text-shadow: none;
+    font-family: $font-family;
 }
 
 @for $i from 1 through 6 {
@@ -20,31 +12,70 @@ body{
   }
 }
 
-a{
-  color: $accent-color;
-  text-decoration: none;
+header,
+footer,
+nav,
+menu,
+article,
+aside,
+section,
+details,
+figcaption,
+figure{
+  display: block;
 }
 
-li{
-  list-style: none;
+th{
+    font-weight: normal;
 }
 
-button,
 input,
 select,
-textarea {
-    color: $font-color;
-    
-    &:focus{
-	    outline: none;
-    }
+button,
+textarea{
+    box-sizing: border-box;
 }
 
-textarea {
-    resize: vertical;
+input[type=text],
+input[type=password],
+input[type=tel],
+input[type=number],
+input[type=submit],
+input[type=button],
+input[type=reset],
+textarea,
+button,
+select{
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    resize: none;
 }
 
-label,
-input[type=submit]{
+input[type=submit],
+input[type=button],
+input[type=reset],
+button,
+label[for]{
     cursor: pointer;
+}
+
+::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance:textfield;
 }
